@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.plsr.sunil.timetello.WakeyService"
+            android:enabled="true" >
+        </service>
+
+        <receiver
+            android:name="com.plsr.sunil.timetello.WakeyRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="com.plsr.sunil.KickStart.WakeWakeyService"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

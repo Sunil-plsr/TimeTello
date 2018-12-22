@@ -18,11 +18,11 @@ public class ScreenReceiver extends BroadcastReceiver {
         if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
             // DO WHATEVER YOU NEED TO DO HERE
             isScreenOn = false;
-            Log.d("bla", "ONN");
+            Log.d("bla", "OFFF");
         } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
             // AND DO WHATEVER YOU NEED TO DO HERE
             isScreenOn = true;
-            Log.d("bla", "OFFF");
+            Log.d("bla", "ONNN");
         }
     }
 }
